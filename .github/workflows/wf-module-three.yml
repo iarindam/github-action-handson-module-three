@@ -13,7 +13,7 @@ jobs:
           # Defaults to the user or organization that owns the workflow file
           scope: '@iarindam'
       - name: Install, CI and Piublish
-        workingdirectory: ./sample-packages/npm
+        working-directory: ./sample-packages/npm
         run: |
           npm install
           npm ci
