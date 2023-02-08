@@ -14,4 +14,5 @@ jobs:
           npm install
           npm run build
           npm publish
+        working-directory: ./sample-packages/npm
         shell: bash
