@@ -9,12 +9,11 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: gaurav-nelson/github-action-markdown-link-check@v1
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 14
-          registry-url: https://npm.pkg.github.com/        
-      - run: npm install
-        working-directory: ./sample-packages/npm
-      - run: npm publish
+      - name: Build and Publish     
+        run: |
+          npm install
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        working-directory: ./sample-packages/npm
+        shell: bash
