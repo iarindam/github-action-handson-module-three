@@ -9,3 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: gaurav-nelson/github-action-markdown-link-check@v1
+      - name: Build and Publish     
+        run: |
+          npm install
+          npm run build
+          npm publish
+        shell: bash
