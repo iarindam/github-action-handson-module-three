@@ -1,4 +1,6 @@
 {
+  "name": "sample packages",
+  "version": "1.0.0"
   "repository": {
     "type": "git",
     "url": "https://github.com/iarindam/github-action-handson-module-three.git"
