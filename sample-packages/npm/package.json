@@ -1,3 +1,9 @@
 {
-  "your": "json config here"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iarindam/github-action-handson-module-three.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
