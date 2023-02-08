@@ -5,7 +5,7 @@ inputs:
   event_ctx:
     description: event object from the github context
     required: true
-
+runs: npm publish
 runs:
   using: node12
   main: "dist/index.js"
